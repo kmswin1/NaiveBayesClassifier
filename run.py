@@ -5,5 +5,5 @@ import os
 import sys
 
 if __name__ == "__main__":
-    nb.train()
+    nb.get_prob()
     nb.test()
