@@ -103,8 +103,8 @@ class NaiveBayesClassifier():
                         log.write("스팸\n")
                         if self.test_data[i][1] != self.pos:
                             self.accuracy += 1.0
-                self.accuracy = float(self.accuracy) / (float(self.totalHam)+float(self.totalSpam))
-                print ("accuracy : %d") % self.ccuracy
+                self.accuracy = float(self.accuracy) / (len(self.test_data))
+                print ("accuracy : %f") % self.accuracy
                 log.write(str(self.accuracy))
             log.close()
         f.close()
