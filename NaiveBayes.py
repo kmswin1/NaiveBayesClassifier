@@ -30,6 +30,8 @@ class NaiveBayesClassifier():
                 self.train_data.append(data)
             else:
                 self.test_data.append(data)
+            if len(self.train_data) % 10000 == 0:
+                print ("%d.iter") % len(self.train_data)
             if not data: break
         f.close()
 
@@ -43,6 +45,8 @@ class NaiveBayesClassifier():
                 for i in range(3, len(self.train_data[i])):
                     self.spamWords[self.train_data[i]] += 1
                     self.totalSpam += 1
+            if k % 10000 == 0:
+                print("%d.iter") % k
 
     def get_prob(self):
         self.split_data()
@@ -93,6 +97,8 @@ class NaiveBayesClassifier():
                         log.write("스팸\n")
                         if self.test_data[i][1] != "정상":
                             accuracy += 1.0
+                    if i % 10000 == 0:
+                        print("%d.iter") % i
                 accuracy /= (self.totalHam+self.totalSpam)
                 log.write(accuracy)
             log.close()
