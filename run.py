@@ -12,4 +12,4 @@ if __name__ == "__main__":
     print ("calculate complete!")
     print ("start test!!")
     naive.test()
-    print ("test")
+    print ("test end")
