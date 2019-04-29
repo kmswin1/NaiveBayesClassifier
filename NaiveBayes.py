@@ -1,4 +1,4 @@
-#-*- coding: euc-kr -*-
+#-*- coding: utf-8 -*-
 
 import pickle
 import os
@@ -92,15 +92,15 @@ class NaiveBayesClassifier():
                     for k in range(3,len(self.test_data[i])):
                         sum += (self.hamLogLikelihood[self.test_data[i][k]] - self.spamLogLikelihood[self.test_data[i][k]])
                     if (self.prior + sum > 0):
-                        result = self.test_data[i][2]+"\tÁ¤»ó\t"
+                        result = self.test_data[i][2]+"\tì •ìƒ\t"
                         f.write(result)
-                        log.write("Á¤»ó\n")
+                        log.write("ì •ìƒ\n")
                         if self.test_data[i][1] == self.pos:
                             self.accuracy += 1.0
                     else:
-                        result = self.test_data[i][2]+"\t½ºÆè\t"
+                        result = self.test_data[i][2]+"\tìŠ¤í¨\t"
                         f.write(result)
-                        log.write("½ºÆÔ\n")
+                        log.write("ìŠ¤íŒ¸\n")
                         if self.test_data[i][1] != self.pos:
                             self.accuracy += 1.0
                 self.accuracy = float(self.accuracy) / (float(self.totalHam)+float(self.totalSpam))
