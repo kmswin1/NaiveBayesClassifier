@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7f128485-a2fe-485e-b665-5398c8dc2ab6" name="kmswin1@163.152.29.200:22" url="http://163.152.29.200">
+        <fileTransfer host="163.152.29.200" port="22" rootFolder="/home/kmswin1" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="0a3d774a-494c-4411-84dd-6ac58011dd26" name="kmswin1@163.152.29.197:22" url="http://163.152.29.197">
+        <fileTransfer host="163.152.29.197" port="22" rootFolder="/home/kmswin1" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="1e3198f8-be92-403f-acf1-fb1f02fde3a6" name="kmswin1@163.152.29.199:22" url="http://163.152.29.197">
+        <fileTransfer host="163.152.29.197" port="22" rootFolder="/home/kmswin1" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
