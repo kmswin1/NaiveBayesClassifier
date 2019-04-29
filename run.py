@@ -7,7 +7,9 @@ import sys
 
 if __name__ == "__main__":
     naive = nb.NaiveBayesClassifier()
+    print ("start calculate prob!!")
     naive.get_prob()
-    print ("get_prob")
+    print ("calculate complete!")
+    print ("start test!!")
     naive.test()
     print ("test")

@@ -61,7 +61,7 @@ class NaiveBayesClassifier():
             self.hamLogLikelihood[key] = np.log(float(self.hamWords[key])/(float(self.hamWords[key])+float(self.spamWords[key])))
             self.spamLogLikelihood[key] = np.log(float(self.spamWords[key]) / (float(self.hamWords[key]) + float(self.spamWords[key])))
         with open("log.txt", 'w') as f:
-            f.write("get_pro bcomplete\n")
+            f.write("get_prob complete\n")
         f.close()
 
     def smoothing(self):
@@ -83,13 +83,13 @@ class NaiveBayesClassifier():
                     for k in range(3,len(self.test_data[i])):
                         sum += (self.hamLogLikelihood[self.test_data[i]] - self.spamLogLikelihood[self.test_data[i]])
                     if (self.prior + sum > 0):
-                        result = self.test_data[2]+"\t정상\t"
+                        result = self.test_data[i][2]+"\t정상\t"
                         f.write(sum)
                         log.write("정상\n")
                         if self.test_data[i][1] == "정상":
                             accuracy += 1.0
                     else:
-                        result = self.test_data[2]+"\t스펨\t"
+                        result = self.test_data[i][2]+"\t스펨\t"
                         log.write("스팸\n")
                         if self.test_data[i][1] != "정상":
                             accuracy += 1.0
