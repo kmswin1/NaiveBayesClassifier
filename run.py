@@ -6,5 +6,6 @@ import os
 import sys
 
 if __name__ == "__main__":
-    nb.get_prob()
-    nb.test()
+    naive = nb.NaiveBayesClassifier()
+    naive.get_prob()
+    naive.test()
