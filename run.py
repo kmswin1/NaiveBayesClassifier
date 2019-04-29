@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import NaiveBayes as nb
 import numpy as np
 import pickle
