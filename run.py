@@ -8,4 +8,6 @@ import sys
 if __name__ == "__main__":
     naive = nb.NaiveBayesClassifier()
     naive.get_prob()
+    print ("get_prob")
     naive.test()
+    print ("test")
