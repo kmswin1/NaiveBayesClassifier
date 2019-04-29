@@ -4,6 +4,6 @@ import pickle
 import os
 import sys
 
-if __name__ == "main":
+if __name__ == "__main__":
     nb.train()
     nb.test()
