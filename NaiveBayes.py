@@ -12,11 +12,11 @@ class NaiveBayesClassifier():
         self.spamLogLikelihood = collections.defaultdict(lambda: 0)
         self.hamWords = collections.defaultdict(lambda: 0)
         self.spamWords = collections.defaultdict(lambda: 0)
-        self.spamPrior = 0.0
-        self.hamPrior = 0.0
-        self.totalHam = 0.0
-        self.totalSpam = 0.0
-        self.prior = 0.0
+        self.spamPrior = 0.001
+        self.hamPrior = 0.0001
+        self.totalHam = 0.0001
+        self.totalSpam = 0.0001
+        self.prior = 0.0001
         self.train_data = []
         self.test_data = []
 
