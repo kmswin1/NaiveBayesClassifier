@@ -87,12 +87,12 @@ class NaiveBayesClassifier():
                         f.write(sum)
                         log.write("정상\n")
                         if self.test_data[i][1] == "정상":
-                            accuracy += 1
+                            accuracy += 1.0
                     else:
                         result = self.test_data[2]+"\t스펨\t"
                         log.write("스팸\n")
                         if self.test_data[i][1] != "정상":
-                            accuracy += 1
+                            accuracy += 1.0
                 accuracy /= (self.totalHam+self.totalSpam)
                 log.write(accuracy)
             log.close()
