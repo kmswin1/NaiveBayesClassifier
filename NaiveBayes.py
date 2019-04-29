@@ -75,6 +75,7 @@ class NaiveBayesClassifier():
 
     def test(self):
         result = ""
+        accuracy = 0.0
         with open("result.txt", 'w') as f:
             with open("log.txt", 'w') as log:
                 for i in range(len(self.test_data)):
@@ -85,8 +86,14 @@ class NaiveBayesClassifier():
                         result = self.test_data[2]+"\t정상\t"
                         f.write(sum)
                         log.write("정상\n")
+                        if self.test_data[i][1] == "정상":
+                            accuracy += 1
                     else:
                         result = self.test_data[2]+"\t스펨\t"
                         log.write("스팸\n")
+                        if self.test_data[i][1] != "정상":
+                            accuracy += 1
+                accuracy /= (self.totalHam+self.totalSpam)
+                log.write(accuracy)
             log.close()
         f.close()

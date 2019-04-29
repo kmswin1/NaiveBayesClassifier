@@ -22,12 +22,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="3052" />
+          <entry key="py" value="3227" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="3052" />
+          <entry key="Python" value="3227" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -51,14 +51,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NaiveBayes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+            <state relative-caret-position="520">
+              <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <marker date="1556544598062" expanded="true" signature="127:128" ph="..." />
-                <marker date="1556544598062" expanded="true" signature="127:133" ph="..." />
-                <marker date="1556544598062" expanded="true" signature="985:991" ph="..." />
-                <marker date="1556544598062" expanded="true" signature="2694:2700" ph="..." />
+                <marker date="1556545459908" expanded="true" signature="127:128" ph="..." />
+                <marker date="1556545459908" expanded="true" signature="127:133" ph="..." />
+                <marker date="1556545459908" expanded="true" signature="985:991" ph="..." />
+                <marker date="1556545459908" expanded="true" signature="2694:2700" ph="..." />
               </folding>
             </state>
           </provider>
@@ -67,7 +67,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Downloads/hw4/NaiveBayes 2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8169">
+            <state relative-caret-position="-8181">
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -194,7 +194,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25885227" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25885227" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -207,7 +207,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32959184" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32959184" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -246,15 +246,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/hw4/NaiveBayes 2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8169">
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -275,25 +266,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NaiveBayes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1556544598062" expanded="true" signature="127:128" ph="..." />
-            <marker date="1556544598062" expanded="true" signature="127:133" ph="..." />
-            <marker date="1556544598062" expanded="true" signature="985:991" ph="..." />
-            <marker date="1556544598062" expanded="true" signature="2694:2700" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/hw4/NaiveBayes 2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8181">
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NaiveBayes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1556545459908" expanded="true" signature="127:128" ph="..." />
+            <marker date="1556545459908" expanded="true" signature="127:133" ph="..." />
+            <marker date="1556545459908" expanded="true" signature="985:991" ph="..." />
+            <marker date="1556545459908" expanded="true" signature="2694:2700" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
