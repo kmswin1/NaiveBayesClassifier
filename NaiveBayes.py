@@ -12,11 +12,11 @@ class NaiveBayesClassifier():
         self.spamLogLikelihood = collections.defaultdict(lambda: 0)
         self.hamWords = collections.defaultdict(lambda: 0)
         self.spamWords = collections.defaultdict(lambda: 0)
-        self.spamPrior = 0
-        self.hamPrior = 0
-        self.totalHam = 0
-        self.totalSpam = 0
-        self.prior = 0
+        self.spamPrior = 0.0
+        self.hamPrior = 0.0
+        self.totalHam = 0.0
+        self.totalSpam = 0.0
+        self.prior = 0.0
         self.train_data = []
         self.test_data = []
 
@@ -53,12 +53,12 @@ class NaiveBayesClassifier():
         with open("log.txt", 'w') as f:
             f.write("smoothing complete\n")
         f.close()
-        self.hamPrior = np.log(self.totalHam/(self.totalHam+self.totalSpam))
-        self.spamPrior = np.log(self.totalSpam/(self.totalHam+self.totalHam))
+        self.hamPrior = np.log(float(self.totalHam)/(float(self.totalHam)+float(self.totalSpam)))
+        self.spamPrior = np.log(float(self.totalSpam)/(float(self.totalHam)+float(self.totalHam)))
         self.prior = self.hamPrior - self.spamPrior
         for key in self.hamWords.keys():
-            self.hamLogLikelihood[key] = np.log(self.hamWords[key]/(self.hamWords[key]+self.spamWords[key]))
-            self.spamLogLikelihood[key] = np.log(self.spamWords[key] / (self.hamWords[key] + self.spamWords[key]))
+            self.hamLogLikelihood[key] = np.log(float(self.hamWords[key])/(float(self.hamWords[key])+float(self.spamWords[key])))
+            self.spamLogLikelihood[key] = np.log(float(self.spamWords[key]) / (float(self.hamWords[key]) + float(self.spamWords[key])))
         with open("log.txt", 'w') as f:
             f.write("get_pro bcomplete\n")
         f.close()
