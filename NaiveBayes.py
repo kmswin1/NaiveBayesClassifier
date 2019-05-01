@@ -98,7 +98,7 @@ class NaiveBayesClassifier():
                         if self.test_data[i][1] == self.pos:
                             self.accuracy += 1.0
                     else:
-                        result = self.test_data[i][2]+"\t스펨\t"
+                        result = self.test_data[i][2]+"\t스팸\t"
                         f.write(result)
                         log.write("스팸\n")
                         if self.test_data[i][1] != self.pos:
