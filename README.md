@@ -1,1 +1,2 @@
-# NaiveBayesClassifier
+# NaiveBayesClassifier<br>
+python run.py
